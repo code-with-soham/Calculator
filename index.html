@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,38 +11,40 @@
    <div id="calculator">
         <input type="text" id="display">
         <div class="button_Container">
-            <button class="button">AC</button>
-            <button class="button">%</button>
-            <button class="button">⌫</button>
-            <button class="button">÷</button>
+            <button class="button" onclick="display.value =''">AC</button>
+            <button class="button" onclick="display.value += '%'">%</button>
+            <button class="button" onclick="display.value = ''">⌫</button>
+            <button class="button" onclick="display.value += '÷'">÷</button>
             
         </div>
         <div class="button_Container">
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            <button class="button">✖</button>
+            <button class="button" onclick="display.value += '7'">7</button>
+            <button class="button" onclick="display.value += '8'">8</button>
+            <button class="button" onclick="display.value += '9'">9</button>
+            <button class="button" onclick="display.value += '*'">✖</button>
             
         </div>
         <div class="button_Container">
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">−</button>
+            <button class="button" onclick="display.value += '4'">4 </button>
+            <button class="button" onclick="display.value += '5'">5</button>
+            <button class="button" onclick="display.value += '6'">6</button>
+            <button class="button" onclick="display.value += '-'">-</button>
             
         </div>
         <div class="button_Container">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">+</button>
+            <button class="button" onclick="display.value += '1'">1</button>
+            <button class="button" onclick="display.value += '2'">2</button>
+            <button class="button" onclick="display.value += '3'">3</button>
+            <button class="button" onclick="display.value += '+'">+</button>
             
         </div>
         <div class="button_Container">
-            <button class="button">00</button>
-            <button class="button">0</button>
-            <button class="button">.</button>
-            <button class="buttonEqual">=</button>
+            <button class="button" onclick="display.value += '00'">00</button>
+            <button class="button" onclick="display.value += '0'">0</button>
+            <button class="button" onclick="display.value += '.'">.</button>
+            <button class="buttonEqual" onclick="
+            currentInput = eval(currentInput);
+            display.value = currentInput;">=</button>
             
         </div>
     </div>
